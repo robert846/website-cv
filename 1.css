@@ -13,10 +13,25 @@ body {
 }
 
 .header {
-    background: #333;
+    background-image: url('assets/pemandangan.jpg'); /* Ganti dengan path ke gambar Anda */
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 60px 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan opacity 50% */
+    z-index: -1;
 }
 
 .header h1 {
