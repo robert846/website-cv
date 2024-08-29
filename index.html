@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        
+        .header p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+        }
+        
+        .about, .experience, .education, .skills {
+            margin: 40px 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+        
+            .header p {
+                font-size: 1rem;
+            }
+        
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* CSS sebelumnya tetap sama */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <img src="assets/robert.jpg" alt="Foto Anda" class="profile-img">
+                <div class="profile-info">
+                    <h1>Antonius Robert Wirawan</h1>
+                    <p>IT SUPPORT</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Saya memiliki minat yang mendalam dalam bidang komputer, terutama dalam memahami cara kerjanya dan mengeksplorasi perangkat keras (hardware). Saya mahir dalam merekomendasikan komputer atau laptop yang tepat sesuai kebutuhan, serta menjelaskan kelebihan dan kekurangan dari setiap pilihan tersebut.
+                Di bidang perangkat lunak (software), saya memiliki pemahaman yang kuat tentang pengelolaan database, pengeditan kode, pembuatan website dasar, serta pengelolaan mesin virtual (seperti VirtualBox). Meskipun saya tidak membuat perangkat lunak dari awal, saya mampu memahami dan mengelola aplikasi yang sudah ada, serta memanfaatkan teknologi AI untuk membantu dalam pekerjaan saya.
+                Dengan latar belakang ini, saya siap mendukung peran IT Support, di mana saya dapat memadukan keahlian teknis saya di bidang hardware dan pemahaman saya tentang software untuk memberikan solusi yang efektif.</p>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <h2>Hobby</h2>
+            <ul>
+                <li>
+                    <h3>Hobby 1</h3>
+                    <p>Bermain Game</p>
+                    <p>genre simulasi dan game dengan alur cerita yang kuat.</p>
+                </li>
+                <li>
+                    <h3>Hobby 2</h3>
+                    <p>Berenang</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li>
+                    <h3>Gelar Pendidikan 1</h3>
+                    <p>SMA(IPS) - 2023</p>
+                </li>
+                <li>
+                    <h3>Gelar Pendidikan 2</h3>
+                    <p>Institusi - 2023-2027</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Keterampilan</h2>
+            <ul>
+                <li>Mengulik dan mengeksplorasi komponen hardware</li>
+                <li>Membuat website dasar</li>
+                <li>Memanfaatkan teknologi AI untuk membantu dalam pekerjaan IT</li>
+                <li>Menggunakan pengetahuan hardware dan software untuk memberikan dukungan teknis</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 A.Robert.W. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
